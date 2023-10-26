@@ -1,0 +1,345 @@
+/* mobile first  - 384x854 galaxy s+*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    scroll-behavior:smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background-color: rgb(215, 215, 236);
+}
+
+.container{
+    display: none;
+}
+
+/* inicio menu  barras do menu hamburguer*/
+.bar{
+    width: 80%;
+    height: 4.5px;
+    background: #384772;
+    margin: 2px auto 8px;
+    transition: transform 0.4s ease;
+}
+
+/* menu animado humburguer*/
+.menu{
+    display:inline-block;
+    position: absolute;
+    position: fixed;
+    width: 56px;
+    top: 10%;
+    left: 15%;
+    transform: translate( -50%, -50%);
+    font-size: 62px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    z-index: 3;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 4px;
+}    
+.menu ::before, ::after{
+        position: absolute;
+        transition: 0.4s ease;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+menu{
+    display: none;
+    margin-left: 10px;
+    position: fixed;
+    z-index: 2;
+}
+menu ul{
+    margin: -12px auto;
+    list-style: none;
+}
+/** menu humburguer  */
+menu a{
+    display: block;
+    padding: 10px 0px;
+    margin-left: 20px;
+    width: 140px;
+    text-decoration: none;
+    background-color:#384772a9;
+    color: white;
+    text-align:center;
+    font-weight: bolder;
+    border-top: 2px solid gray;
+    border-radius: 10px;
+}
+menu :hover{
+    background-color:#384772a9;
+}
+menu a:hover::after{
+    opacity: 0;
+}
+
+
+#sobre{
+    margin-top: 140px;
+    height: 45rem;
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+#sobre img{
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.sobre-mim h1{
+    font-size: 65px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+    background-color: rgb(170, 170, 241);
+}
+
+.sobre-mim h3{
+    font-size: 20px;
+}
+
+.sobre-mim p{
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    line-height: 22px;
+}
+
+#formacao{
+    background-color: rgb(170, 170, 241);
+    height: 900px;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+
+#formacao h2{
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+    font-size: 28px;
+}
+
+#formacao div{
+    width: 310px;
+    text-align: center;
+    line-height: 25px;
+    display: block;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.cursos-1, .cursos-2{
+    margin: 40px auto;
+}
+
+#formacao img{
+    margin: auto;
+    width: 60px;
+}
+
+#formacao h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#formacao p{
+    font-size: 16px;
+}
+
+#skills div{
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills h2{
+    border-radius: 10px;
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+}
+
+.habilidades img{
+    display: block;
+    padding: 10px;
+    width: 4em;
+    border-radius: 2.5em;
+}
+
+.habilidades img:hover{
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.658);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.616);
+    transition: transform 0.5s border 1s;
+}
+
+#experiencia{
+    display: block;
+    height: 540px;
+    margin-top: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(170, 170, 241);
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#experiencia li{
+    margin-top: 10px;
+    list-style: none;
+    display:inline-flex;
+}
+
+.experiencia-itens{
+    margin-top: 10px;
+    background-color: white;
+    height: 420px;
+    border-radius: 10px;
+}
+
+.experiencia-itens img{
+    display: inline-flex;
+    padding: 14px;
+    width: 72px;
+    border-radius: 50%;
+}
+
+#experiencia h2{
+    font-size: 28px;
+    padding: 12px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+}
+
+.experiencia-itens h3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.experiencia-itens li{
+    font-size: 16px;
+}
+
+/*  inicio carrossel */
+
+/*******/
+.slider{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+}
+.cards-descricao{
+    background-color: rgba(170, 170, 241, 0.397);
+    width: 250px;
+    height: 400px;
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 25px;
+    box-shadow: 0 12px 12px rgba(3, 0, 0, 0.3);font-size: 1.3em;
+    transition: 0.5s;
+}
+
+.cards-descricao:hover{
+    transform: scale(1.1);
+}
+.cards-descricao h3{
+    margin-top: 10px;
+    padding: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+}
+
+.cards-descricao img{
+    width: 237px;
+    height: 234px;
+    border-radius: 15px;
+    box-shadow: 0 12px 12px rgba(3, 0, 0, 0.3);
+}
+
+.slider > .slider-content{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 500ms ease;
+}
+
+.slider > .slider-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slider-item{
+    height: 60vh;
+    margin-top: 30px;
+}
+
+.titulo{
+    text-align: center;
+    /*margin-left: 130px;*/
+    font-size: 28px;
+    padding: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+}
+
+
+
+.slider > input:nth-child(1):checked ~ .slider-content{
+    transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content{
+    transform: translateX(-100%);
+}
+
+.slider > input:nth-child(3):checked ~ .slider-content{
+    transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content{
+    transform: translateX(-300%);
+}
+/*********/
+
+/*  fim carrossel */
+footer{
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;    
+}
+
+footer img{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 15px rgba(3, 0, 0, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: -5s;
+}
+    
+footer img:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer p{
+    color: black;
+    margin-top: 10px;
+}
+

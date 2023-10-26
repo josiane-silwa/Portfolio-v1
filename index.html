@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Josiane da Silva">
+    <title>Portfolio Profissional</title>
+    <link rel="stylesheet" href="css/estilo2.css">
+    <link rel="stylesheet" href="css/resposivocopy.css">
+    <!--
+    <link rel="stylesheet" href="css/estilo.css">
+-->
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <div class="menu" onclick="clickmenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <menu id="itens">
+            <ul>
+                <a href="#main">Home</a>
+                <a href="#formacao">Formação</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#experiencia">Experiências</a>
+                <a href="#projetos">Projetos</a>
+            </ul>
+        </menu>
+            <ul class="menu-reponsivo">
+                <li class="container">
+                    <a class="text1" data-text="Home" href="#main">Home</a>
+                </li>
+                <li class="container">
+                    <a class="text1" data-text="Formação" href="#formacao">Formação</a>
+                </li>
+                <li class="container">
+                    <a class="text1" data-text="Habilidades" href="#skills">Habilidades</a>
+                </li>
+                <li class="container"> 
+                    <a class="text1" data-text="Experiencias" href="#experiencia">Experiencias</a>
+                </li>
+                <li class="container"> 
+                    <a class="text1" data-text="Projetos" href="#projetos">Projetos</a>
+                </li>
+            </ul>
+    </header> <!--  fim menu -->
+    <main id="main">
+        <section id="sobre">
+            <div class="sobre-mim">
+                <img id="foto" src="img/FB_IMG_1659031301839.jpg">
+                <h1>Josiane Silva</h1>
+                <h2>Analista de Sistemas</h2>
+                <h2>Desenvolvedora Front-end</h2>
+                <p>Bem Vindos! <br> Sou Josiane da Silva, formada em Tecnologia da Informação. Trabalhei como assistente de pesquisa e analista de sistemas, onde adquiri conhecimento e experiência em manipulação, processamento, visualização e análise de dados (Linux, Shell script, CDO, Python). Também tenho conhecimento em Mysql, Sql, PHP, Html5, Css3, Javascript, Git e Github. Atualmente estou focando meus estudos em desenvolvimento web front-end. </p>
+            </div>
+        </section><!-- fim sobre mim-->
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <div class="cursos-1">
+                <img src="img/curso-online.png">
+                <h3>Tecnologia em Informática - Banco de dados</h3>
+                <p>Fatec - Faculdade Prof. Waldomiro May</p>
+                <p>jul 2008 - jul 2011</p>
+            </div>
+            <div class="cursos-2">
+                <img src="img/educacao-online.png">
+                <h3>Cursos Extracurriculares</h3>
+                <p>Santander Bootcamp Ciencia de dados com Python - 2023</p>
+                <p>Formação React T5 One - 2023</p>
+                <p>Formação Business Agility T5 One - 2023</p>
+                <p>Formação Front-end T5 One - 2023</p>
+                <p>Formação Desenvolvimento Pessoal T5 One - 2023</p>
+                <p>Formação Iniciante em Programação T5 One - 2023</p>
+                <p>Bootcamp Potencia Tech Angular Developer - Powered by Ifood - 2023</p>
+                <p>Network Securyt 70h - 2022</p>
+                <p>CCNA1 Introdução a Redes 70h - 2022</p>
+                <p>Fundamentos em Cibergurança 30h - 2022</p>
+            </div>
+        </section><!-- fim formacao-->
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="habilidades">
+                <abbr title="Linux"><img src="img/linux.png"></abbr>
+                <abbr title="Python"><img src="img/python.png"></abbr>
+                <abbr title="Sql"><img src="img/servidor-sql.png"></abbr>
+                <abbr title="Mysql"><img src="img/mysql.png"></abbr>
+                <abbr title="Php"><img src="img/php.png"></abbr>
+                <abbr title="Html 5"><img src="img/html-5.png"></abbr>
+                <abbr title="Css 3"><img src="img/css.png"></abbr>
+                <abbr title="JavaScript"><img src="img/js.png"></abbr>
+                <abbr title="NodeJs"><img src="img/nodejs.jpg"></abbr>
+                <abbr title="Git"><img src="img/logoGit.png"></abbr>
+                <abbr title="Github"><img src="img/github.png"></abbr>
+            </div>
+        </section><!--  fim skills-->
+        <section id="experiencia">
+            <h2>Experiências</h2>
+            <div class="experiencia-itens">
+                <img src="img/logoInpe.png" style="background:white;">
+                <h3>Instituto Nacional de Pesquisas Espaciais - INPE</h3>
+                <ul>
+                    <li>Bolsista FAPES - DTI-A (jun 2020 - jan 2021)</li><br>
+                    <li>Bolsista FAPES - DTI-A (mai 2019 - abr 2020)</li><br>
+                    <li>Analista de sistemas (abr 2017 - mar 2018) - Ambar Technology</li><br>
+                    <li>Bolsista Cnpq - EXP (abr 2016 - mar 2017)</li><br>
+                    <li>Bolsista Cnpq - EXP-B (abr 2015 - mar 2016)</li><br>
+                    <li>Bolsista Cnpq - PCI-DD (mai 2012 - abr 2015)</li><br>
+                    <li>Bolsista Cnpq - Iniciação Científica (jun 2010 - mai 2011)</li>
+                </ul>
+            </div>
+        </section>
+        <!-- ****************  -->
+        <section class="slider">
+            <div class="titulo">
+                <h2 id="projetos">Projetos</h2>
+            </div>
+            <input name='slide' type="radio" >
+            <input name='slide' type="radio" checked>
+            <input name='slide' type="radio">
+            <input name='slide' type="radio">
+
+            <div class="slider-content">
+                
+                <div class="slider-item">
+                    <div class="cards-descricao">
+                        <a href="https://josiane-silwa.github.io/projeto-cordel/" target="_blank"><img src="img/projetoCordel.png"></a>
+                        <h3>Projeto Cordel</h3>
+                        <p>Pagina em html e css com efeito paralax  desenvolvida durante curso de css</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="cards-descricao">
+                        <a href="http://josiane-silwa.github.io-lista_tarefas/" target="_blank"><img src="img/githubdownload.png"></a>
+                        <h3>ToDoList</h3>
+                        <p>Em breve</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="cards-descricao">
+                        <a href="https://github.com/josiane-silwa" target="_blank"><img src="img/githubdownload.png"></a>
+                        <h3>Projetos</h3>
+                        <p>Em construção</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="cards-descricao">
+                        <a href="https://github.com/josiane-silwa" target="_blank"><img src="img/codigo-fonte-ferramentas-desenvolvedor-front-end.webp"></a>
+                        <h3>Projetos</h3>
+                        <p>Em construção</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href="https://github.com/josiane-silwa" target="_blank"><img src="img/githubdownload.png"></a>
+            <a href="https://www.linkedin.com/in/josiane-silva-6a650532" target="_blank"><img src="img/linkedindownload.png"></a>
+            <a href="http://lattes.cnpq.br/3889829973365080" target="_blank"><img src="img/logolattes.png" style="width:90px;"></a>
+            <p>&copy; 2023. Todos os direitos reservados. Josiane da Silva</p>
+        </footer>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
