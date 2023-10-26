@@ -81,12 +81,11 @@ menu a:hover::after{
     opacity: 0;
 }
 
-
 #sobre{
     margin-top: 140px;
     height: 45rem;
     text-align: center;
-    margin-bottom: 250px;
+    margin-bottom: 252px;
 }
 
 #sobre img{
@@ -249,7 +248,7 @@ menu a:hover::after{
     text-align: center;
     margin: 5px auto;
     border-radius: 25px;
-    box-shadow: 0 12px 12px rgba(3, 0, 0, 0.3);font-size: 1.3em;
+    box-shadow: 0 10px 10px rgba(3, 0, 0, 0.3);font-size: 1.3em;
     transition: 0.5s;
 }
 
@@ -266,7 +265,7 @@ menu a:hover::after{
     width: 237px;
     height: 234px;
     border-radius: 15px;
-    box-shadow: 0 12px 12px rgba(3, 0, 0, 0.3);
+    box-shadow: 0 10px 10px rgba(3, 0, 0, 0.3);
 }
 
 .slider > .slider-content{
@@ -282,7 +281,7 @@ menu a:hover::after{
 }
 
 .slider-item{
-    height: 60vh;
+    height: 70vh;
     margin-top: 30px;
 }
 
@@ -293,8 +292,6 @@ menu a:hover::after{
     padding: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
 }
-
-
 
 .slider > input:nth-child(1):checked ~ .slider-content{
     transform: translateX(0%);
@@ -340,6 +337,6 @@ footer img:hover{
 
 footer p{
     color: black;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
